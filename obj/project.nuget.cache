@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "piDtg/Eflpc=",
+  "dgSpecHash": "1jPsGFRpWs4=",
   "success": true,
-  "projectFilePath": "/Users/hondatoshinari/InvestmentAnalysis.Api/InvestmentAnalysis.Api.csproj",
+  "projectFilePath": "/Users/hondatoshinari/dev/investment-analysis-engine/src/InvestmentAnalysis.Api/InvestmentAnalysis.Api.csproj",
   "expectedPackageFiles": [
     "/Users/hondatoshinari/.nuget/packages/microsoft.aspnetcore.openapi/10.0.5/microsoft.aspnetcore.openapi.10.0.5.nupkg.sha512",
     "/Users/hondatoshinari/.nuget/packages/microsoft.openapi/2.0.0/microsoft.openapi.2.0.0.nupkg.sha512"

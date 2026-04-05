@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/hondatoshinari/InvestmentAnalysis.Api/InvestmentAnalysis.Api.csproj": {}
+    "/Users/hondatoshinari/dev/investment-analysis-engine/src/InvestmentAnalysis.Api/InvestmentAnalysis.Api.csproj": {}
   },
   "projects": {
-    "/Users/hondatoshinari/InvestmentAnalysis.Api/InvestmentAnalysis.Api.csproj": {
+    "/Users/hondatoshinari/dev/investment-analysis-engine/src/InvestmentAnalysis.Api/InvestmentAnalysis.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/hondatoshinari/InvestmentAnalysis.Api/InvestmentAnalysis.Api.csproj",
+        "projectUniqueName": "/Users/hondatoshinari/dev/investment-analysis-engine/src/InvestmentAnalysis.Api/InvestmentAnalysis.Api.csproj",
         "projectName": "InvestmentAnalysis.Api",
-        "projectPath": "/Users/hondatoshinari/InvestmentAnalysis.Api/InvestmentAnalysis.Api.csproj",
+        "projectPath": "/Users/hondatoshinari/dev/investment-analysis-engine/src/InvestmentAnalysis.Api/InvestmentAnalysis.Api.csproj",
         "packagesPath": "/Users/hondatoshinari/.nuget/packages/",
-        "outputPath": "/Users/hondatoshinari/InvestmentAnalysis.Api/obj/",
+        "outputPath": "/Users/hondatoshinari/dev/investment-analysis-engine/src/InvestmentAnalysis.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/hondatoshinari/.nuget/NuGet/NuGet.Config"
