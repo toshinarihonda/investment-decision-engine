@@ -1,3 +1,4 @@
+using InvestmentAnalysis.Api.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace InvestmentAnalysis.Api.Controllers
@@ -6,10 +7,16 @@ namespace InvestmentAnalysis.Api.Controllers
     [Route("stock")]
     public class StockController : ControllerBase
     {
-        [HttpGet]
-        public IActionResult Get()
+        private readonly JQuantsService _jquantsService;
+        public StockController(JQuantsService jquantsService)
         {
-            return Ok("Stock API is working fine");
+            _jquantsService = jquantsService;
+        }
+        [HttpGet]
+        public async Task<IActionResult> Get()
+        {
+            var result = await _jquantsService.GetDailyStockPriceAsync("72030", "2026-02-05");
+            return Ok(result);
         }
     }
 }
