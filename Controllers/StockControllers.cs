@@ -13,9 +13,9 @@ namespace InvestmentAnalysis.Api.Controllers
             _jquantsService = jquantsService;
         }
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> Get(string code = "72030", string date ="2026-02-05")
         {
-            var result = await _jquantsService.GetDailyStockPriceAsync("72030", "2026-02-05");
+            var result = await _jquantsService.GetDailyStockPriceAsync(code, date);
             return Ok(result);
         }
     }
