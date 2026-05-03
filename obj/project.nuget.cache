@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "1jPsGFRpWs4=",
+  "dgSpecHash": "vZXpiL4Zpp0=",
   "success": true,
   "projectFilePath": "/Users/hondatoshinari/dev/investment-analysis-engine/src/InvestmentAnalysis.Api/InvestmentAnalysis.Api.csproj",
   "expectedPackageFiles": [
+    "/Users/hondatoshinari/.nuget/packages/awssdk.core/4.0.4/awssdk.core.4.0.4.nupkg.sha512",
+    "/Users/hondatoshinari/.nuget/packages/awssdk.dynamodbv2/4.0.18/awssdk.dynamodbv2.4.0.18.nupkg.sha512",
     "/Users/hondatoshinari/.nuget/packages/microsoft.aspnetcore.openapi/10.0.5/microsoft.aspnetcore.openapi.10.0.5.nupkg.sha512",
     "/Users/hondatoshinari/.nuget/packages/microsoft.openapi/2.0.0/microsoft.openapi.2.0.0.nupkg.sha512"
   ],

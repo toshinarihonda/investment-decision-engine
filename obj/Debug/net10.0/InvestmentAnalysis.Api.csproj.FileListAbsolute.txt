@@ -65,3 +65,5 @@
 /Users/hondatoshinari/dev/investment-analysis-engine/src/InvestmentAnalysis.Api/obj/Debug/net10.0/InvestmentAnalysis.Api.pdb
 /Users/hondatoshinari/dev/investment-analysis-engine/src/InvestmentAnalysis.Api/obj/Debug/net10.0/InvestmentAnalysis.Api.genruntimeconfig.cache
 /Users/hondatoshinari/dev/investment-analysis-engine/src/InvestmentAnalysis.Api/obj/Debug/net10.0/ref/InvestmentAnalysis.Api.dll
+/Users/hondatoshinari/dev/investment-analysis-engine/src/InvestmentAnalysis.Api/bin/Debug/net10.0/AWSSDK.Core.dll
+/Users/hondatoshinari/dev/investment-analysis-engine/src/InvestmentAnalysis.Api/bin/Debug/net10.0/AWSSDK.DynamoDBv2.dll

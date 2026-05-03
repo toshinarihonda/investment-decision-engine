@@ -8,10 +8,30 @@
     ".NETCoreApp,Version=v10.0": {
       "InvestmentAnalysis.Api/1.0.0": {
         "dependencies": {
+          "AWSSDK.DynamoDBv2": "4.0.18",
           "Microsoft.AspNetCore.OpenApi": "10.0.5"
         },
         "runtime": {
           "InvestmentAnalysis.Api.dll": {}
+        }
+      },
+      "AWSSDK.Core/4.0.4": {
+        "runtime": {
+          "lib/net8.0/AWSSDK.Core.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.4.0"
+          }
+        }
+      },
+      "AWSSDK.DynamoDBv2/4.0.18": {
+        "dependencies": {
+          "AWSSDK.Core": "4.0.4"
+        },
+        "runtime": {
+          "lib/net8.0/AWSSDK.DynamoDBv2.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.18.0"
+          }
         }
       },
       "Microsoft.AspNetCore.OpenApi/10.0.5": {
@@ -40,6 +60,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AWSSDK.Core/4.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RjBk1WDrOCpsSRGn6j2lYhgiyYnXEhMctwJevNnIPIIGpgj49ifbU6FmG1Dk+1M/VSuqeTQ1WVsssziTty7b2w==",
+      "path": "awssdk.core/4.0.4",
+      "hashPath": "awssdk.core.4.0.4.nupkg.sha512"
+    },
+    "AWSSDK.DynamoDBv2/4.0.18": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/xZV49haG9m41p1A4ixnM3cVYTks3+8Eer/re8WZ31TJIlx3Y8B7ysat91vkt10Jh8LiGS6e5x6HWdHS0ZRtsA==",
+      "path": "awssdk.dynamodbv2/4.0.18",
+      "hashPath": "awssdk.dynamodbv2.4.0.18.nupkg.sha512"
     },
     "Microsoft.AspNetCore.OpenApi/10.0.5": {
       "type": "package",

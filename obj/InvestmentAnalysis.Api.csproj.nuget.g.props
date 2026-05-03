@@ -12,4 +12,8 @@
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="/Users/hondatoshinari/.nuget/packages/" />
   </ItemGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgAWSSDK_Core Condition=" '$(PkgAWSSDK_Core)' == '' ">/Users/hondatoshinari/.nuget/packages/awssdk.core/4.0.4</PkgAWSSDK_Core>
+    <PkgAWSSDK_DynamoDBv2 Condition=" '$(PkgAWSSDK_DynamoDBv2)' == '' ">/Users/hondatoshinari/.nuget/packages/awssdk.dynamodbv2/4.0.18</PkgAWSSDK_DynamoDBv2>
+  </PropertyGroup>
 </Project>
