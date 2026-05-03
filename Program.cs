@@ -1,9 +1,33 @@
 using InvestmentAnalysis.Api.Services;
+using Amazon;
+using Amazon.DynamoDBv2;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddHttpClient<JQuantsService>();
+
+var awsRegion = builder.Configuration["AWS:Region"] ?? "ap-northeast-1";
+var awsServiceUrl = builder.Configuration["AWS:ServiceURL"];
+
+builder.Services.AddSingleton<IAmazonDynamoDB>(_ =>
+{
+    var config = new AmazonDynamoDBConfig();
+
+    if (!string.IsNullOrWhiteSpace(awsServiceUrl))
+    {
+        config.ServiceURL = awsServiceUrl;
+        config.AuthenticationRegion = awsRegion;
+        config.UseHttp = awsServiceUrl.StartsWith("http://", StringComparison.OrdinalIgnoreCase);
+    }
+    else
+    {
+        config.RegionEndpoint = RegionEndpoint.GetBySystemName(awsRegion);
+    }
+
+    return new AmazonDynamoDBClient("dummy", "dummy", config);
+});
+builder.Services.AddScoped<DynamoDbService>();
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
